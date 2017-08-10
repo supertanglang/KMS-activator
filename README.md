@@ -1,6 +1,7 @@
 # KMS-activator
 
-This is a community based project, which was released on MDL and got several patches from me and other people. 
+This is a community based project, which was released on MDL and got several patches from me and other people.<br />
+The goal isn't to bypass Windows activation, the project is for research and to (if used) activation KMS with a legit key, it simplify the activation process. 
 
 
 To use this solution for one-time standalone activation, run this script only:
@@ -20,10 +21,9 @@ Copy $oem$ to "sources" folder in the install media (iso/usb)
 use SppExtComObjPatcher.cmd if you want to uninstall the project afterwards.
 
 
-Notes:<br />
-* This project support activating KMS-Client editions of:
+This project support activating KMS-Client editions of:<br />
 * Windows 7/8/8.1/10
-* Windows Server 2008R2/2012/2012R2
+* Windows Server 2008 R2/2012/2012 R2
 * Office 2010/2013/2016
 
 Credits:<br />
