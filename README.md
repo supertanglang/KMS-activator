@@ -13,10 +13,10 @@ To use this solution for one-time standalone activation, run this script only:
 
 
 To install this solution for auto renewal activation, run these scripts respectively:<br />
-* `Clear-KMS-Cache.cmd`         	   - (Optional)
-* `SppExtComObjPatcher.cmd`     	   - for install/uninstall the Patcher Hook
-* `Activate-Local.cmd`          	   - to activate local machine, you must run it at least once!
+* `SppExtComObjPatcher.cmd`     	   - For install/uninstall the Patcher Hook
+* `Activate-Local.cmd`          	   - To activate local machine, you must run it at least once!
 * `Check-Activation-Status.cmd` 	   - (Optional)
+* `Clear-KMS-Cache.cmd`         	   - (Optional)
 
 
 OEM installation:<br />
@@ -37,3 +37,4 @@ Credits:<br />
 * Nucleus        	- Special assistance
 * abbodi1406     	- MDL
 * CHEF-KOCH     	- MDL
+* vyvojar			- MDL
