@@ -37,5 +37,6 @@ Credits:<br />
 * Nucleus        	- MDL (Special assistance)
 * abbodi1406     	- MDL
 * CHEF-KOCH     	- MDL
-* vyvojar			- MDL
-* s1ave77			- MDL
+* vyvojar			    - MDL
+* s1ave77			    - MDL
+* WindowsAddict 	- MDL
