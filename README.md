@@ -44,7 +44,7 @@ Credits:<br />
 * AveYo           - MDL
 
 
-## Difference between HWID or KMS38
+## Difference between HWID and KMS38
 
 KMS38 is only a renamed and modified version of the original KMS solution designed to activate the _problematic_ Windows versions such as [LTSB/LTSC](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/LTSC-What-is-it-and-when-should-it-be-used/ba-p/293181). It is not a new invented method, the developer just decided it's cool to rename it (_maybe to get more attention_) and add some support for Windows versions which didn't exist back in the "old" KMS days (KMS_VL_ALL is still under development!). 38 itself means 2038 which is the year until LTSB gets supported.
 
