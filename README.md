@@ -161,3 +161,6 @@ Wait until command prompt window is closed and Debug.log is created
 Then upload or copy/post the log file
 
 Note: this will auto remove SppExtComObjPatcher if it was installed
+
+Reference:
+* [Turn off KMS Client Online AVS Validation](https://getadmx.com/?Category=Windows_10_2016&Policy=Microsoft.Policies.SoftwareProtectionPlatform::NoAcquireGT)
