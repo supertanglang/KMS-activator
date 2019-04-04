@@ -164,3 +164,9 @@ Note: this will auto remove SppExtComObjPatcher if it was installed
 
 Reference:
 * [Turn off KMS Client Online AVS Validation](https://getadmx.com/?Category=Windows_10_2016&Policy=Microsoft.Policies.SoftwareProtectionPlatform::NoAcquireGT)
+
+## KMS VS HWIDGEN
+
+**Privacy** wise you should prefer KMS over HWIDGEN because you can create your own KMS Server (the images are online for that which runs in a VM). You can  activate your OS behind a VPN/proxy while this _might_ not be possible with HWIDGEN. The Enterprise versions and LTSB/LTSC versions are activated via KMS within HWIDGEN (the method is a little bit different but the execution is the same). Whenever you use HWIDGEN (KMS38 Method) (without VPN/proxy) you basically expose your ID, IP, Mac etc to MS. They don't do anything against _small fishes_ but if they see that lots of people abusing the loophole which HWIDGEN abuses they might close it. KMS itself can't be closed because that would also lock-out paid customers.
+
+However, HWIDGEN has it's benefits. On machines which doesn't require KMS like e.g. Home/Pro versions it seems the _better_ deal because the activation is permanent and you could import/export the license. Keep in mind that hardware/software changes might trigger Windows to re-validate or re-activate the license - in such a case HWIDGEN seens the easier solution since you don't have to do anything to re-activate Windows.
