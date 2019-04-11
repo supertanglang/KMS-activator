@@ -4,8 +4,8 @@
 
 # About KMS-Activator + 20(38)
 
-This is a community based project, which was released on MDL and got several patches from me and other people.<br />
-The goal isn't to bypass Windows activation, the project is for research and to (if used) activation KMS with a legit key, it simplify the activation process. 
+This is a community-based project, which was released on MDL and got several patches from me and other people.<br />
+The goal isn't to bypass the Windows activator, but for research (and possibly simplify the activation process). 
 
 
 To use this solution for one-time standalone activation, run this script only:
@@ -22,7 +22,7 @@ To install this solution for auto renewal activation, run these scripts respecti
 OEM installation:<br />
 `$oem$` folder for pre-activating the system during install.
 Copy $oem$ to "sources" folder in the install media (iso/usb)
-use SppExtComObjPatcher.cmd if you want to uninstall the project afterwards.
+use SppExtComObjPatcher.cmd if you want to uninstall the project afterward.
 
 
 This project support _activating_ (for tests only!) KMS-Client editions of:<br />
@@ -46,22 +46,22 @@ Credits:<br />
 
 ## Difference between HWID and KMS38
 
-KMS38 is only a renamed and modified version of the original KMS solution designed to activate the _problematic_ Windows versions such as [LTSB/LTSC](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/LTSC-What-is-it-and-when-should-it-be-used/ba-p/293181). It is not a new invented method, the developer just decided it's cool to rename it (_maybe to get more attention_) and add some support for Windows versions which didn't exist back in the "old" KMS days (KMS_VL_ALL is still under development!). 38 itself means 2038 which is the year until LTSB gets supported.
+KMS38 is only a renamed and modified version of the original KMS solution designed to activate the _problematic_ Windows versions such as [LTSB/LTSC](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/LTSC-What-is-it-and-when-should-it-be-used/ba-p/293181). It is not a newly invented method, the developer just decided it's cool to rename it (_maybe to get more attention_) and add some support for Windows versions which didn't exist back in the "old" KMS days (KMS_VL_ALL is still under development!). 38 itself means 2038 which is the year until LTSB gets supported.
 
-* HWID activation is done only once and windows will be automatically activated after a format/reinstall. Your hardware ID is stored on microsoft servers, which means they can blacklist or close the loophole (if they want). 
-* You can't uninstall or remove HWID once you activate it - you can only remove the exectuable but the activation files are still on the partition.
+* HWID activation is done only once and windows will be automatically activated after a format/reinstall. Your hardware ID is stored on Microsoft servers, which means they can blacklist or close the loophole (if they want). 
+* You can't uninstall or remove HWID once you activate it - you can only remove the executable but the activation files are still on the partition.
 * HWID doesn't work for LTSB/LTSC
-* HWID needs an active internet connection (without VPN) which might causes additional security problems (since MS gets your real data such as [IP etc](https://en.wikipedia.org/wiki/Microsoft_Product_Activation)).
+* HWID needs an active internet connection (without VPN) which might cause additional security problems (since MS gets your real data such as [IP etc](https://en.wikipedia.org/wiki/Microsoft_Product_Activation)).
 * KMS38/KMS19 works for LTSC/LTSB or Server Standard/Datacenter 2016 and 2019 and can also work in an _offline_ mode.
 * MSToolkit (the current version doesn't detect KMS38) and only works (or was tested) up to RS 4.
 * KMS38/KMS19 works in a VM same like HWID.
 * HWID is depending on the current hardware, once you change it you have to re-activate Windows while KMS does it automatically in the background (if you allow it).
-* The activation server (fake) is 69.69.69.69 which is only required to make Windows happy. Windows doesn't accept localhost IPs for KMS since Windows 10 anymore.
+* The activation server (fake) is 69.69.69.69 which is only required to make Windows happy. Windows don't accept localhost IPs for KMS since Windows 10 anymore.
 
 
 ## Anti-Virus programs
 
-Usually batch and GUI programs are _safe_ (Windows has several internal protection mechanism since PowerShell integration), however most AV's getting triggered by potentially unwanted application ([pua](https://en.wikipedia.org/wiki/Potentially_unwanted_program)) because MS decides that this loophole bypass certain activation mechanism (techniqually it doesn't bypass anything) which is against their ToS. This of course, means that such programs (every of them, KMSPico etc) gets flagged, this is a [false positive](https://en.wikipedia.org/wiki/False_positives_and_false_negatives) however since there are a lot of fake repacks and fake versions avaible ensure you always compare the checksums!
+Usually batch and GUI programs are _safe_ (Windows has several internal protection mechanisms since PowerShell integration), however most AV's getting triggered by potentially unwanted application ([pua](https://en.wikipedia.org/wiki/Potentially_unwanted_program)) because MS decides that this loophole bypass certain activation mechanism (technically it doesn't bypass anything) which is against their ToS. This, of course, means that such programs (every one of them, KMSPico, etc) gets flagged, this is a [false positive](https://en.wikipedia.org/wiki/False_positives_and_false_negatives) however since there are a lot of fake repacks and fake versions available ensure you always compare the checksums!
 
 
 
@@ -80,7 +80,7 @@ rmdir /s /q "%windir%\setup\scripts"
 exit
 ```
 
-You can supress the popups with the silent switches (HWID) `%~dp0"hwidkms38genmk6.exe" hwid` (KMS38) `%~dp0"hwidkms38genmk6.exe" kms38` In the above example it's for KMS38.
+You can suppress the popups with the silent switches (HWID) `%~dp0"hwidkms38genmk6.exe" hwid` (KMS38) `%~dp0"hwidkms38genmk6.exe" kms38` In the above example it's for KMS38.
 
 
 ## Auto Renewal
@@ -92,7 +92,7 @@ Install/uninstall the Patcher Hook.
 
 2.) Activate-Local.cmd
 Activate installed supported products (you must run it at least once).
-You may need to run it again if you installed Office product afterwards.
+You may need to run it again if you installed Office product afterward.
 
 
 ## Online KMS
@@ -113,7 +113,7 @@ if you have valid/trusted external KMS host server.
 then add a command to run it in your setupcomplete.cmd, example:
 call KMS_VL_ALL.cmd
 
-- Use SppExtComObjPatcher.cmd if you want to uninstall the project afterwards.
+- Use SppExtComObjPatcher.cmd if you want to uninstall the project afterward.
 
 - Note: setupcomplete.cmd is disabled if the default installed key for the edition is OEM Channel
 
@@ -121,7 +121,7 @@ call KMS_VL_ALL.cmd
 
 - Some security programs will report infected files, that is false-positive due KMS emulating.
 - Remove any other KMS solutions. Temporary turn off AV security protection. Run as administrator.
-- If you installed the solution for auto renewal, exclude this file in AV security protection:
+- If you installed the solution for auto-renewal, exclude this file in AV security protection:
 `C:\Windows\system32\SppExtComObjHook.dll`
 
 ## KMS Options for advanced users
@@ -133,7 +133,7 @@ Enable embedded KMS Emulator functions
 never change this option
 
 - KMS_RenewalInterval
-Set interval (minutes) for activated clients to auto renew KMS activation
+Set interval (minutes) for activated clients to auto-renew KMS activation
 this does not affect the overall KMS period (6 months)
 allowed values: from 15 to 43200
 
@@ -147,11 +147,11 @@ Set custom KMS host Hardware ID hash, 0x prefix is mandatory
 only affect Windows 8.1/ 10
 
 - Windows, Office2010, Office2013, Office2016, Office2019
-Set custom fixed KMS host ePID for each product, instead generating it randomly
+Set custom fixed KMS host ePID for each product, instead of generating it randomly
 
 ## Debug
 
-If the activation failed, you may run the debug mode to help determining the reason
+If the activation failed, you may run the debug mode to help to determine the reason
 
 Move SppExtComObjPatcher-kms folder to a short path
 With Notepad open/edit KMS_VL_ALL.cmd
@@ -167,6 +167,6 @@ Reference:
 
 ## KMS VS HWIDGEN
 
-**Privacy** wise you should prefer KMS over HWIDGEN because you can create your own KMS Server (the images are online for that which runs in a VM). You can  activate your OS behind a VPN/proxy while this _might_ not be possible with HWIDGEN. The Enterprise versions and LTSB/LTSC versions are activated via KMS within HWIDGEN (the method is a little bit different but the execution is the same). Whenever you use HWIDGEN (KMS38 Method) (without VPN/proxy) you basically expose your ID, IP, Mac etc to MS. They don't do anything against _small fishes_ but if they see that lots of people abusing the loophole which HWIDGEN abuses they might close it. KMS itself can't be closed because that would also lock-out paid customers.
+**Privacy** wise you should prefer KMS over HWIDGEN because you can create your own KMS Server (the images are online for that which runs in a VM). You can activate your OS behind a VPN/proxy while this _might_ not be possible with HWIDGEN. The Enterprise versions and LTSB/LTSC versions are activated via KMS within HWIDGEN (the method is a little bit different but the execution is the same). Whenever you use HWIDGEN (KMS38 Method) (without VPN/proxy) you basically expose your ID, IP, Mac, etc to MS. They don't do anything against _small fishes_ but if they see that lots of people abusing the loophole which HWIDGEN abuses they might close it. KMS itself can't be closed because that would also lock-out paid customers.
 
-However, HWIDGEN has it's benefits. On machines which doesn't require KMS like e.g. Home/Pro versions it seems the _better_ deal because the activation is permanent and you could import/export the license. Keep in mind that hardware/software changes might trigger Windows to re-validate or re-activate the license - in such a case HWIDGEN seens the easier solution since you don't have to do anything to re-activate Windows.
+However, HWIDGEN has its benefits. On machines which don't require KMS like e.g. Home/Pro versions, it seems the _better_ deal because the activation is permanent and you could import/export the license. Keep in mind that hardware/software changes might trigger Windows to re-validate or re-activate the license - in such a case HWIDGEN seems the easier solution since you don't have to do anything to re-activate Windows.
