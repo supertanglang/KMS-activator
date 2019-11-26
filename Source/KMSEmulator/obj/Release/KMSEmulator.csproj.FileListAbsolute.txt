@@ -1,0 +1,4 @@
+\\Mac\Home\Documents\My Git Repositories\Microsoft Toolkit\KMSEmulator\bin\Release\KMSEmulator.dll
+\\Mac\Home\Documents\My Git Repositories\Microsoft Toolkit\KMSEmulator\bin\Release\KMSEmulator.pdb
+\\Mac\Home\Documents\My Git Repositories\Microsoft Toolkit\KMSEmulator\obj\Release\KMSEmulator.dll
+\\Mac\Home\Documents\My Git Repositories\Microsoft Toolkit\KMSEmulator\obj\Release\KMSEmulator.pdb
